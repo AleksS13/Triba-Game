@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f9f7e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-board {
+    background: linear-gradient(145deg, #fefefe, #d7d7d7);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0px #fff, 4px 4px 0px #aaa;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.game-button:hover {
+    background-color: #ffdd44;
+    transform: translateY(-5px);
+}
+
+.game-button:active {
+    background-color: #ffcc00;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+}
+
+.game-board {
+    text-align: center;
+    padding: 20px;
+    background: #f0e68c;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.buttons-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-button {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 24px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-button i {
+    font-size: 32px;
+    
+}
+
+.game-button:hover {
+    background-color: #ffdd44;
+    transform: translateY(-5px);
+}
+
+.game-button:active {
+    background-color: #ffcc00;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    background-color: rgba(255, 204, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+
+}
+
+.grid-item.clicked {
+    background-color: #ffcc00;
+    
+}
+
+.grid-item.kliknut {
+    background-color: #ffcc0000;
+    
+    border: none;
+}
+
+#revans {
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#pobjednik {
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 2px 2px 0px #000, 4px 4px 0px #000;
+    margin-bottom: 20px;
+   
+}
+
+#restart {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 24px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+    transition: transform 0.2s, background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}

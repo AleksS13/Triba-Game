@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mape</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="game-board">
+        <h1 class="title">Ovo je Prva Stranica</h1>
+        
+
+        <div>
+            <input type="text" id="igrac1" placeholder="igrac1">
+            <input type="color" id="boja1" value="#ff0000">
+        </div>
+        <div>
+            <input type="text" id="igrac2" placeholder="igrac2">
+            <input type="color" id="boja2" value="#0000ff">
+        </div>
+
+        <div class="buttons-container">
+            <a href="map1.html" class="game-button"><i class="fas fa-square"></i></a>
+            <a href="map2.html" class="game-button"><i class="fas fa-circle"></i></a>
+            <a href="map3.html" class="game-button"><i class="fas fa-play fa-caret-up"></i></a>
+        </div>
+
+        <a href="index.html" class="game-button">Nazad</a>
+    </div>
+
+    <script>
+        let vrijednst = document.getElementsByClassName('game-button');
+        let ime1 = document.getElementById('igrac1');
+        let ime2 = document.getElementById('igrac2');
+        let bojaa1 = document.getElementById('boja1');
+        let bojaa2 = document.getElementById('boja2');
+
+
+        vrijednst[0].addEventListener('click', function () {
+
+            let igrac1 = ime1.value;
+            let boja1 = bojaa1.value;
+            let igrac2 = ime2.value;
+            let boja2 = bojaa2.value;
+
+            localStorage.setItem("ime1", igrac1);
+            localStorage.setItem("ime2", igrac2);
+            localStorage.setItem("boja1", boja1);
+            localStorage.setItem("boja2", boja2);
+        })
+
+        vrijednst[1].addEventListener('click', function () {
+
+            let igrac1 = ime1.value;
+            let boja1 = bojaa1.value;
+            let igrac2 = ime2.value;
+            let boja2 = bojaa2.value;
+
+            localStorage.setItem("ime1", igrac1);
+            localStorage.setItem("ime2", igrac2);
+            localStorage.setItem("boja1", boja1);
+            localStorage.setItem("boja2", boja2);
+        })
+
+        vrijednst[2].addEventListener('click', function () {
+
+            let igrac1 = ime1.value;
+            let boja1 = bojaa1.value;
+            let igrac2 = ime2.value;
+            let boja2 = bojaa2.value;
+
+            localStorage.setItem("ime1", igrac1);
+            localStorage.setItem("ime2", igrac2);
+            localStorage.setItem("boja1", boja1);
+            localStorage.setItem("boja2", boja2);
+        })
+    </script>
+</body>
+
+</html>
