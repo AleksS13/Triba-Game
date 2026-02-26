@@ -25,6 +25,8 @@ Pobjednik je igrač koji je posljednji odigrao validan potez.
 
 ---
 
+![Triba Screenshot](screenshot.png)
+
 ## 🗺️ Dostupne mape
 
 - Mapa 1 – Kvadrat
